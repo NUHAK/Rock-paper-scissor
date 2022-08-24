@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap" rel="stylesheet"> 
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="result">
+            <div class="title">
+                <h1>ROCK<br>PAPER<br/>SCISSORS</h1>
+            </div>
+            <div class="score">
+                <h2>SCORE</h2>
+                <h1>0</h1>
+            </div>
+        </div>
+        <div class="select">
+            <div class="hand paper">
+                <img src="images/paper.png" alt="" onclick="selectHand('paper')">
+            </div>
+            <div class="hand scissors">
+                <img src="images/scissor.png" alt="" onclick="selectHand('scissor')">
+
+                
+            </div>
+            <div class="hand rock">
+                <img src="images/rock.png" alt="" onclick="selectHand('rock')">
+
+                
+            </div>
+        </div>
+        <div class="results">
+            <div class="userhand">
+                <h1>YOU</h1>
+                <div class="selectedImage">
+                    <img id="userpicked" src="images/scissor.png" alt="">
+                </div>
+            </div>
+            <div class="refree">
+                <div class="decision"><h1>YOU WIN!</h1></div>
+                <div class="again"onclick="restart()">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand">
+                <h1>COMPUTER</h1>
+                <div class="selectedImage">
+                    <img id="computerpicked"src="images/paper.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>    
